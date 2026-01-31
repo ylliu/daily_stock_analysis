@@ -2249,7 +2249,7 @@ class NotificationService:
             return False
         
         success_count = 0
-        
+        content = content+"突破"
         for i, url in enumerate(self._custom_webhook_urls):
             try:
                 # 通用 JSON 格式，兼容大多数 Webhook
